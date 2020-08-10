@@ -1,0 +1,25 @@
+.question {
+  &__list {
+    @include no-list;
+  }
+
+  &__item-title {
+    @include text(14px, 20px);
+    font-weight: 500;
+    color: $text-question;
+
+    @media (min-width: $width-tablet) {
+      @include text(16px, 19px);
+    }
+  }
+
+  &__item-text {
+    @include text(14px, 20px);
+    font-weight: 300;
+    color: $text-question;
+
+    @media (min-width: $width-tablet) {
+      @include text(16px, 25px);
+    }
+  }
+}

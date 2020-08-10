@@ -1,0 +1,30 @@
+.reviews {
+  &__slider-autor {
+    @include text(18px, 21px);
+    font-weight: 500;
+
+    @media (min-width: $width-tablet) {
+      @include text(24px, 28px);
+    }
+  }
+
+  &__slider-text {
+    @include text(14px, 20px);
+    font-weight: 400;
+
+    @media (min-width: $width-tablet) {
+      @include text(14px, 23px);
+      font-weight: 300;
+    }
+  }
+
+  &__slider-data {
+    @include text(12px, 17px);
+    font-weight: 400;
+    color: $text;
+
+    @media (min-width: $width-tablet) {
+      @include text(12px, 19px);
+    }
+  }
+}

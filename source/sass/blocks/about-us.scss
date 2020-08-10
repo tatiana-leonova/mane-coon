@@ -1,0 +1,30 @@
+.about-us {
+  &__list {
+    @include no-list;
+  }
+
+  &__item {
+    @include text(14px, 20px);
+    font-weight: 300;
+
+    @media (min-width: $width-tablet) {
+      @include text(16px, 26px);
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $white;
+    background-color: #1f1c1d;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus {
+      background-color: $text;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

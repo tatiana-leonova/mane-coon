@@ -1,0 +1,10 @@
+.text-section {
+  @include text(14px, 20px);
+  font-weight: 300;
+  color: $text;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    @include text(16px, 26px);
+  }
+}

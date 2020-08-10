@@ -1,0 +1,16 @@
+.features {
+  background-color: #1f1c1d;
+
+  &__list {
+    @include no-list;
+  }
+
+  &__item {
+    @include text(14px, 20px);
+    font-weight: 300;
+
+    @media (min-width: $width-tablet) {
+      @include text(16px, 23px);
+    }
+  }
+}

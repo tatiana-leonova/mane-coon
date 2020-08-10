@@ -1,0 +1,25 @@
+.button {
+  @include text(12px, 14px);
+  color: $white;
+  background-color: inherit;
+  border: 0.5px solid $text;
+  padding: 15px 19px;
+  max-width: 200px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+
+  @media (min-width: $width-tablet) {
+    @include text(14px, 26px);
+    padding: 18px 35px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $text;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

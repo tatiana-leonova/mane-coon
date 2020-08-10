@@ -1,0 +1,30 @@
+.team {
+  &__slider-autor-name {
+    @include text(18px, 21px);
+    font-weight: 500;
+    color: $text;
+
+    @media (min-width: $width-tablet) {
+      @include text(24px, 28px);
+    }
+  }
+
+  &__slider-autor-post {
+    @include text(14px, 19px);
+    font-weight: 400;
+    color: $text;
+
+    @media (min-width: $width-tablet) {
+      @include text(16px, 22px);
+    }
+  }
+
+  &__slider-text {
+    @include text(14px, 20px);
+    font-weight: 300;
+
+    @media (min-width: $width-tablet) {
+      @include text(16px, 25px);
+    }
+  }
+}

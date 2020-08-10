@@ -1,0 +1,42 @@
+.page-header {
+  background-color: #181617;
+
+  @media (max-width: $width-mobile-only) {
+    text-align: center;
+  }
+
+  &__social {
+    @media (max-width: $width-mobile-only) {
+      display: none;
+    }
+  }
+
+  &__geo {
+    @include text(14px, 21px);
+    color: $text;
+
+    @media (min-width: $width-tablet) {
+      @include text(16px, 24px);
+    }
+  }
+
+  &__title {
+    @include text(36px, 42px);
+    font-family: $font-secondary;
+    font-weight: 400;
+    margin: 0;
+
+    @media (min-width: $width-tablet) {
+      @include text(52px, 60px);
+    }
+  }
+
+  &__text {
+    @include text(14px, 20px);
+    color: $text;
+
+    @media (min-width: $width-tablet) {
+      @include text(16px, 24px);
+    }
+  }
+}

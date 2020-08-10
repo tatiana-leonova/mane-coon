@@ -1,0 +1,24 @@
+.care {
+  &__list {
+    @include no-list;
+  }
+
+  &__item-title {
+    @include text(18px, 21px);
+    font-weight: 700;
+    color: $text;
+
+    @media (min-width: $width-tablet) {
+      @include text(22px, 26px);
+    }
+  }
+
+  &__item-text {
+    @include text(14px, 20px);
+    font-weight: 300;
+
+    @media (min-width: $width-tablet) {
+      @include text(14px, 23px);
+    }
+  }
+}
