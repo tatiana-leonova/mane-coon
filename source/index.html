@@ -17,10 +17,26 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header container">
-      <a class="page-header__logo logo">
-        <img class="header__logo-img" src="img/icon-logo.svg" width="50" height="22" alt="Логотип питомника Мейн-Кунов">
-      </a>
+    <a class="page-header__logo logo">
+      <img class="header__logo-img" src="img/icon-logo.svg" width="50" height="22" alt="Логотип питомника Мейн-Кунов">
+    </a>
+
+    <div class="page-header__promo">
+      <div class="container">
+        <div class="page-header__promo-wrapper">
+          <span class="page-header__geo">Новосибирск</span>
+          <h1 class="page-header__title">Питомник Мейн-Кунов</h1>
+          <p class="page-header__text">
+            Первый питомник с расширенным спектром услуг
+          </p>
+          <button class="page-header__button button">Смотреть котиков</button>
+        </div>
+      </div>
+      <picture>
+        <source media="(min-width: 1366px)" srcset="img/cat-promo-desktop@1x.png">
+        <source media="(min-width: 768px)" srcset="img/cat-promo-tablet@1x.png">
+        <img class="page-header__image" src="img/cat-promo-mobile@1x.png" alt="Фото рыжего кота Мейн-Куна">
+      </picture>
       <ul class="page-header__social social">
         <li>
           <a class="social-item social-item--facebook" href="#" target="_blank" aria-label="Фейсбук">
@@ -38,21 +54,6 @@
           </a>
         </li>
       </ul>
-
-      <div class="page-header__promo">
-        <span class="page-header__geo">Новосибирск</span>
-        <h1 class="page-header__title">Питомник Мейн-Кунов</h1>
-        <p class="page-header__text">
-          Первый питомник с расширенным спектром услуг
-        </p>
-        <button class="page-header__button button">Смотреть котиков</button>
-        <picture>
-          <source media="(min-width: 1366px)" srcset="img/cat-promo-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/cat-promo-tablet@1x.png">
-          <img class="page-header__image" src="img/cat-promo-mobile@1x.png" alt="Фото рыжего кота Мейн-Куна">
-        </picture>
-      </div>
-    </div>
   </header>
 
   <main class="page-main">
