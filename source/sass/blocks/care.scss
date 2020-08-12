@@ -1,12 +1,45 @@
 .care {
+  background-image: url("../img/bg-care-tablet@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 35px;
+  }
+
   &__list {
     @include no-list;
+    padding-bottom: 45px;
+  }
+
+  &__item {
+    border: 1px solid $text;
+    border-right: 46px solid $text;
+    margin-bottom: 30px;
+    padding: 25px 8px 25px 25px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      background-image: url("../img/arrow-right-mobile.svg");
+      background-repeat: no-repeat;
+      content: "";
+      width: 18px;
+      height: 26px;
+      top: 50%;
+      right: -35px;
+    }
   }
 
   &__item-title {
+    @include zero-indent;
     @include text(18px, 21px);
     font-weight: 700;
     color: $text;
+    margin-bottom: 20px;
 
     @media (min-width: $width-tablet) {
       @include text(22px, 26px);
