@@ -92,11 +92,13 @@
             <img class="pets__slider-image pets__slider-image--3" src="img/pets-2-desktop@1x.png"
               alt="Изображение коричневого кота Мейн-Куна">
           </div>
-          <button class="pets__slider-arrow pets__slider-arrow--prev arrow-slider arrow-slider--prev" type="button" aria-label="Предыдущий слайд">
+          <button class="pets__slider-arrow pets__slider-arrow--prev arrow-slider arrow-slider--prev" type="button"
+            aria-label="Предыдущий слайд">
             <svg width="8" height="18">
               <use xlink:href="#icon-arrow-left-slider"></use>
           </button>
-          <button class="pets__slider-arrow pets__slider-arrow--next arrow-slider arrow-slider--next" type="button" aria-label="Следующий слайд">
+          <button class="pets__slider-arrow pets__slider-arrow--next arrow-slider arrow-slider--next" type="button"
+            aria-label="Следующий слайд">
             <svg width="8" height="18">
               <use xlink:href="#icon-arrow-right-slider"></use>
           </button>
@@ -115,14 +117,14 @@
           умное животное, которому нет равных
         </p>
         <div>
-        <div class="features__image-wrapper">
-        <picture>
-          <source media="(min-width: 1366px)" srcset="img/features-cat-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/features-cat-tablet@1x.png">
-          <img class="features__image" src="img/features-cat-mobile@1x.png" width="256" height="291"
-            alt="Изображение рыжего кота Мейн-Куна во весь рост">
-        </picture>
-        </div>
+          <div class="features__image-wrapper">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/features-cat-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/features-cat-tablet@1x.png">
+              <img class="features__image" src="img/features-cat-mobile@1x.png" width="256" height="291"
+                alt="Изображение рыжего кота Мейн-Куна во весь рост">
+            </picture>
+          </div>
         </div>
         <ul class="features__list">
           <li class="features__item">Легко уживается в семьях с детьми или другими животными</li>
@@ -138,19 +140,25 @@
         <h2 class="about-us__title title-section">Почему именно мы?</h2>
         <p class="about-us__text text-section">Приобретая животное в нашем питомнике, вы получите</p>
         <ul class="about-us__list">
-          <li class="about-us__item about-us__item--active">
+          <li class="about-us__item">
             <a class="about-us__link" href="#">
-              Бесплатное ветеринарное обслуживание 5 лет
+              <svg class="about-us__item-icon about-us__item-icon--veterinary" width="80" height="88">
+                <use xlink:href="#icon-veterinary"></use>
+                <span class="about-us__item-text">Бесплатное ветеринарное обслуживание 5 лет</span>
             </a>
           </li>
           <li class="about-us__item">
             <a class="about-us__link" href="#">
-              Консультирование по любому вопросу 24 часа в сутки
+              <svg class="about-us__item-icon about-us__item-icon--consultation" width="80" height="71">
+                <use xlink:href="#icon-consultation"></use>
+                <span class="about-us__item-text">Консультирование по любому вопросу 24 часа в сутки</span>
             </a>
           </li>
           <li class="about-us__item">
             <a class="about-us__link" href="#">
-              Индивидуальный подбор питания для вашего кота
+              <svg class="about-us__item-icon about-us__item-icon--nutrition" width="57" height="88">
+                <use xlink:href="#icon-nutrition"></use>
+                <span class="about-us__item-text">Индивидуальный подбор питания для вашего кота</span>
             </a>
           </li>
         </ul>

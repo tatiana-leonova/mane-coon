@@ -11,6 +11,7 @@
 
   &__list {
     @include no-list;
+    padding-bottom: 30px;
   }
 
   &__item {

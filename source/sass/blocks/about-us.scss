@@ -1,11 +1,26 @@
 .about-us {
+  background-color: #181617;
+
+  &__title {
+    padding-top: 60px;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
   &__list {
     @include no-list;
+    padding-bottom: 30px;
   }
 
   &__item {
     @include text(14px, 20px);
     font-weight: 300;
+    background-color: #1f1c1d;
+    margin-bottom: 30px;
+    padding: 15px;
 
     @media (min-width: $width-tablet) {
       @include text(16px, 26px);
@@ -13,10 +28,16 @@
   }
 
   &__link {
+    position: relative;
     text-decoration: none;
     color: $white;
     background-color: #1f1c1d;
     transition: 0.3s;
+    padding: 148px 43px 64px 40px;
+    min-width: 260px;
+    min-height: 218px;
+    display: block;
+
 
     &:hover,
     &:focus {
@@ -25,6 +46,39 @@
 
     &:active {
       opacity: 0.3;
+    }
+  }
+
+  &__item-text {
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  &__item-icon {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+
+    &--veterinary {
+      top: 40px;
+      left: calc(50% - 40px);
+      width: 80px;
+      height: 88px;
+    }
+
+    &--consultation {
+      top: 64px;
+      left: calc(50% - 40px);
+      width: 80px;
+      height: 71px;
+    }
+
+    &--nutrition {
+      top: 55px;
+      left: calc(50% - 28px);
+      width: 57px;
+      height: 88px;
     }
   }
 }
