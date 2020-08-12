@@ -209,7 +209,12 @@
         </p>
         <div class="team__slider">
           <div class="team__slider-item">
-            <img class="team__slider-image" src="" alt="">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/team-1-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/team-1-tablet@1x.jpg">
+              <img class="team__slider-image" src="img/team-1-mobile@1x.jpg" width="126" height="126"
+                alt="Изображение основателя питомника Сережи Попова">
+            </picture>
             <p class="team__slider-autor-name">
               Серёжа Попов
             </p>
@@ -221,26 +226,35 @@
               Мы в ответе за каждого приобретенного вами питомца
             </p>
             <ul class="team__slider-social social">
-              <li>
-                <a class="social__item social__item--facebook" href="#" target="_blank" aria-label="Фейсбук">
-
+              <li class="team__slider-social-item">
+                <a class="social__item-link social__item-link--facebook" href="#" target="_blank" aria-label="Фейсбук">
+                  <svg width="11" height="14">
+                    <use xlink:href="#icon-facebook"></use>
                 </a>
               </li>
-              <li>
-                <a class="social__item social__item--twitter" href="#" target="_blank" aria-label="Твиттер">
-
+              <li class="team__slider-social-item">
+                <a class="social__item-link social__item-link--twitter" href="#" target="_blank" aria-label="Твиттер">
+                  <svg width="17" height="15">
+                    <use xlink:href="#icon-twitter"></use>
                 </a>
               </li>
-              <li>
-                <a class="social__item social__item--vk" href="#" target="_blank" aria-label="Вконтакте">
-
+              <li class="team__slider-social-item">
+                <a class="social__item-link social__item-link--vk" href="#" target="_blank" aria-label="Вконтакте">
+                  <svg width="18" height="10">
+                    <use xlink:href="#icon-vk"></use>
                 </a>
               </li>
             </ul>
-            <button class="team__slider-arow arrow-slider arrow-slider--prev" type="button"
-              aria-label="Предыдущий сотрудник"></button>
-            <button class="team__slider-arrow arrow-slider arrow-slider--next" type="button"
-              aria-label="Следующий сотрудник"></button>
+            <button class="team__slider-arrow team__slider-arrow--prev  arrow-slider arrow-slider--prev" type="button"
+              aria-label="Предыдущий сотрудник">
+              <svg width="10" height="22">
+                <use xlink:href="#icon-arrow-left-slider"></use>
+            </button>
+            <button class="team__slider-arrow team__slider-arrow--next arrow-slider arrow-slider--next" type="button"
+              aria-label="Следующий сотрудник">
+              <svg width="10" height="22">
+                <use xlink:href="#icon-arrow-right-slider"></use>
+            </button>
           </div>
         </div>
       </div>

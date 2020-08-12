@@ -1,8 +1,35 @@
 .team {
+  background-color: #181617;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+
+  &__slider {
+    padding: 0 11px;
+    background-image: linear-gradient(to bottom, #181617 63px, #1f1c1d 63px, #1f1c1d 64px);
+    position: relative;
+  }
+
+  &__slider-image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
   &__slider-autor-name {
     @include text(18px, 21px);
     font-weight: 500;
     color: $text;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
 
     @media (min-width: $width-tablet) {
       @include text(24px, 28px);
@@ -13,6 +40,9 @@
     @include text(14px, 19px);
     font-weight: 400;
     color: $text;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 25px;
 
     @media (min-width: $width-tablet) {
       @include text(16px, 22px);
@@ -22,9 +52,43 @@
   &__slider-text {
     @include text(14px, 20px);
     font-weight: 300;
+    text-align: center;
+    margin-bottom: 25px;
 
     @media (min-width: $width-tablet) {
       @include text(16px, 25px);
+    }
+  }
+
+  &__slider-social {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-left: 90px;
+    padding-right: 90px;
+    max-width: 350px;
+  }
+
+  &__slider-social-item {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  &__slider-arrow {
+    position: absolute;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+
+    &--prev {
+      top: 54px;
+      left: 45px;
+    }
+
+    &--next {
+      top: 54px;
+      right: 45px;
     }
   }
 }
