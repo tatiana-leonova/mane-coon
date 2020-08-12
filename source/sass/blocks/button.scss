@@ -8,6 +8,7 @@
   cursor: pointer;
   text-decoration: none;
   transition: 0.3s;
+  text-align: center;
 
   @media (min-width: $width-tablet) {
     @include text(14px, 16px);

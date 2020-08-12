@@ -1,6 +1,14 @@
 .features {
   background-color: #1f1c1d;
 
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
   &__list {
     @include no-list;
   }
@@ -8,9 +16,61 @@
   &__item {
     @include text(14px, 20px);
     font-weight: 300;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 10px;
+      background-color: $text;
+      border-radius: 50%;
+      top: 5px;
+      left: -20px;
+    }
 
     @media (min-width: $width-tablet) {
       @include text(16px, 23px);
     }
+  }
+
+  &__image-wrapper {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    text-align: center;
+    width: 290px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      background-color: #151313;
+      top: 16%;
+      right: 10%;
+      z-index: -1;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 280px;
+      height: 280px;
+      border: 1px solid $text;
+      border-radius: 50%;
+      top: 7%;
+      right: 1%;
+      z-index: -1;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 60px;
   }
 }

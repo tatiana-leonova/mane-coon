@@ -4,6 +4,7 @@
   font-weight: 400;
   color: $white;
   text-align: center;
+  margin: 0;
 
   @media (min-width: $width-tablet) {
     @include text(36px, 42px);

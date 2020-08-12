@@ -80,19 +80,26 @@
           <li class="pets__item"><a class="pets__item-link" href="#">Котята</a></li>
         </ul>
         <div class="pets__slider">
-          <div class="pets__slider-item">
-            <img class="pets__slider-image" src="" alt="">
+          <div class="pets__slider-item pets__slider-item--1">
+            <img class="pets__slider-image pets__slider-image--1" src="img/pets-1-desktop@1x.png"
+              alt="Изображение белого кота Мейн-Куна">
           </div>
-          <div class="pets__slider-item">
-            <img class="pets__slider-image" src="" alt="">
+          <div class="pets__slider-item pets__slider-item--2">
+            <img class="pets__slider-image pets__slider-image--2" src="img/pets-3-desktop@1x.png" width="234"
+              height="248" alt="Изображение серого кота Мейн-Куна">
           </div>
-          <div class="pets__slider-item">
-            <img class="pets__slider-image" src="" alt="">
+          <div class="pets__slider-item pets__slider-item--3">
+            <img class="pets__slider-image pets__slider-image--3" src="img/pets-2-desktop@1x.png"
+              alt="Изображение коричневого кота Мейн-Куна">
           </div>
-          <button class="pets__slider-arow arrow-slider arrow-slider--prev" type="button"
-            aria-label="Предыдущий слайд"></button>
-          <button class="pets__slider-arrow arrow-slider arrow-slider--next" type="button"
-            aria-label="Следующий слайд"></button>
+          <button class="pets__slider-arrow pets__slider-arrow--prev arrow-slider arrow-slider--prev" type="button" aria-label="Предыдущий слайд">
+            <svg width="8" height="18">
+              <use xlink:href="#icon-arrow-left-slider"></use>
+          </button>
+          <button class="pets__slider-arrow pets__slider-arrow--next arrow-slider arrow-slider--next" type="button" aria-label="Следующий слайд">
+            <svg width="8" height="18">
+              <use xlink:href="#icon-arrow-right-slider"></use>
+          </button>
         </div>
         <a class="pets__button button" href="#">Смотреть больше</a>
       </div>
@@ -107,12 +114,16 @@
           Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите
           умное животное, которому нет равных
         </p>
+        <div>
+        <div class="features__image-wrapper">
         <picture>
           <source media="(min-width: 1366px)" srcset="img/features-cat-desktop@1x.png">
           <source media="(min-width: 768px)" srcset="img/features-cat-tablet@1x.png">
-          <img class="features__image" src="img/features-cat-mobile@1x.png"
+          <img class="features__image" src="img/features-cat-mobile@1x.png" width="256" height="291"
             alt="Изображение рыжего кота Мейн-Куна во весь рост">
         </picture>
+        </div>
+        </div>
         <ul class="features__list">
           <li class="features__item">Легко уживается в семьях с детьми или другими животными</li>
           <li class="features__item">Выполняет команды как дрессированная собака</li>

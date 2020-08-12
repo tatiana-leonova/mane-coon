@@ -1,8 +1,27 @@
 .pets {
   background-color: #1f1c1d;
+  padding-top: 60px;
+  margin-bottom: 60px;
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
 
   &__list {
     @include no-list;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   &__item-link {
@@ -22,6 +41,44 @@
       @media (min-width: $width-tablet) {
         @include text(18px, 21px);
       }
+    }
+  }
+
+  &__slider-image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__slider-image--1,
+  &__slider-image--3 {
+    @media (max-width: $width-mobile-only) {
+      display: none;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__slider {
+    position: relative;
+    margin-bottom: 45px;
+  }
+
+  &__slider-arrow {
+    background-color: inherit;
+    border: none;
+    position: absolute;
+
+    &--prev {
+      left: 0;
+      top: 50%;
+    }
+
+    &--next {
+      right: 0;
+      top: 50%;
     }
   }
 }
