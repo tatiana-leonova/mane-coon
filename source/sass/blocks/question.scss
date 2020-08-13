@@ -1,12 +1,59 @@
 .question {
+  padding-top: 60px;
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   &__list {
     @include no-list;
   }
 
+  &__item {
+    margin-bottom: 30px;
+  }
+
   &__item-title {
     @include text(14px, 20px);
-    font-weight: 500;
+    position: relative;
+    font-weight: 400;
     color: $text-question;
+    margin: 0;
+    padding: 10px 15px;
+    border: 0.5px solid $text;
+    background-color: inherit;
+    cursor: pointer;
+    width: 100%;
+    padding-right: 50px;
+    text-align: left;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 43px;
+      height: 100%;
+      background-color: inherit;
+      border-left: 0.5px solid $text;
+      right: 0;
+      top: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/plus.svg");
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      top: calc(50% - 8px);
+      right: 13px;
+    }
 
     @media (min-width: $width-tablet) {
       @include text(16px, 19px);
@@ -17,6 +64,11 @@
     @include text(14px, 20px);
     font-weight: 300;
     color: $text-question;
+    border: 0.5px solid $text;
+    border-top: none;
+    margin: 0;
+    padding: 10px 17px 10px 10px;
+
 
     @media (min-width: $width-tablet) {
       @include text(16px, 25px);
