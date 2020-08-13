@@ -3,12 +3,23 @@
   padding-top: 60px;
   margin-bottom: 60px;
 
+  @media (min-width: $width-tablet) {
+    padding-top: 100px;
+    margin-bottom: 90px;
+  }
+
   &__title {
     margin-bottom: 35px;
   }
 
   &__text {
     margin-bottom: 30px;
+
+    @media (min-width: $width-tablet) {
+      width: 75%;
+      margin: 0 auto;
+      margin-bottom: 38px;
+    }
   }
 
   &__list {
@@ -16,7 +27,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0 auto;
     margin-bottom: 30px;
+    width: 85%;
+
+    @media (min-width: $width-tablet) {
+      width: 45%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
   }
 
   &__item {
@@ -47,11 +66,16 @@
   &__slider-image {
     display: block;
     margin: 0 auto;
+
+    @media (min-width: $width-tablet) {
+      width: 474px;
+      height: 490px;
+    }
   }
 
   &__slider-image--1,
   &__slider-image--3 {
-    @media (max-width: $width-mobile-only) {
+    @media (min-width: $width-mobile) {
       display: none;
     }
   }
@@ -64,12 +88,23 @@
   &__slider {
     position: relative;
     margin-bottom: 45px;
+
+    @media (min-width: $width-tablet) {
+      margin-bottom: 55px;
+    }
   }
 
   &__slider-arrow {
     background-color: inherit;
     border: none;
     position: absolute;
+
+    @media (min-width: $width-tablet) {
+      svg {
+        width: 50px;
+        height: 30px;
+      }
+    }
 
     &--prev {
       left: 0;
