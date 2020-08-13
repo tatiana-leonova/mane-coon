@@ -17,20 +17,29 @@
 
   &__item {
     border: 1px solid $text;
-    border-right: 46px solid $text;
     margin-bottom: 30px;
-    padding: 25px 8px 25px 25px;
+    padding: 25px 54px 25px 25px;
     position: relative;
 
     &::before {
+      position: absolute;
+      content: "";
+      width: 46px;
+      height: 100%;
+      background-color: $text;
+      top: 0;
+      right: 0;
+    }
+
+    &::after {
       position: absolute;
       background-image: url("../img/arrow-right-mobile.svg");
       background-repeat: no-repeat;
       content: "";
       width: 18px;
       height: 26px;
-      top: 50%;
-      right: -35px;
+      top: calc(50% - 5px);
+      right: 8px;
     }
   }
 
