@@ -1,7 +1,29 @@
 .reviews {
+  padding-top: 30px;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__slider {
+    position: relative;
+    background-image: linear-gradient(to bottom, #1f1c1d 85px, #181617 85px, #181617 86px);
+    padding-bottom: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  &__slider-image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
   &__slider-autor {
     @include text(18px, 21px);
     font-weight: 500;
+    text-align: center;
+    margin-bottom: 25px;
 
     @media (min-width: $width-tablet) {
       @include text(24px, 28px);
@@ -10,7 +32,9 @@
 
   &__slider-text {
     @include text(14px, 20px);
-    font-weight: 400;
+    font-weight: 3 00;
+    text-align: center;
+    margin-bottom: 25px;
 
     @media (min-width: $width-tablet) {
       @include text(14px, 23px);
@@ -22,9 +46,43 @@
     @include text(12px, 17px);
     font-weight: 400;
     color: $text;
+    margin-right: 35px;
+    margin-top: 8px;
 
     @media (min-width: $width-tablet) {
       @include text(12px, 19px);
     }
+  }
+
+  &__slider-arrow {
+    background-color: inherit;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+
+    &--prev {
+      top: 75px;
+      left: -6px;
+    }
+
+    &--next {
+      top: 75px;
+      right: -6px;
+    }
+  }
+
+  &__slider-inner {
+    display: flex;
+    padding: 0 30px;
+  }
+
+  &__slider-social {
+    display: flex;
+  }
+
+  &__slider-social-item {
+    fill: $text;
+    border: 1px solid $text;
+    margin-right: 5px;
   }
 }
