@@ -8,18 +8,35 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 35px;
+
+    @media (min-width: $width-tablet) {
+      padding-top: 90px;
+      margin-bottom: 38px;
+    }
   }
 
   &__list {
     @include no-list;
     padding-bottom: 45px;
+
+    @media (min-width: $width-tablet) {
+      padding-bottom: 75px;
+    }
   }
 
   &__item {
     border: 1px solid $text;
+    margin: 0 auto;
     margin-bottom: 30px;
     padding: 25px 54px 25px 25px;
+    max-width: 500px;
     position: relative;
+
+    @media (min-width: $width-tablet) {
+      max-width: 600px;
+      padding: 35px 110px 30px 45px;
+
+    }
 
     &::before {
       position: absolute;
@@ -29,6 +46,10 @@
       background-color: $text;
       top: 0;
       right: 0;
+
+      @media (min-width: $width-tablet) {
+        width: 60px;
+      }
     }
 
     &::after {
@@ -40,6 +61,10 @@
       height: 26px;
       top: calc(50% - 5px);
       right: 8px;
+
+      @media (min-width: $width-tablet) {
+        right: 15px;
+      }
     }
   }
 
