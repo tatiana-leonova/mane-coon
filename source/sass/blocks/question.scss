@@ -1,6 +1,10 @@
 .question {
   padding-top: 60px;
 
+  @media (min-width: $width-tablet) {
+    padding-top: 130px;
+  }
+
   &__title {
     margin-bottom: 35px;
   }
@@ -9,6 +13,10 @@
     margin-bottom: 40px;
     padding-left: 50px;
     padding-right: 50px;
+
+    @media (min-width: $width-tablet) {
+      margin-bottom: 50px;
+    }
   }
 
   &__list {
@@ -26,12 +34,17 @@
     color: $text-question;
     margin: 0;
     padding: 10px 15px;
-    border: 0.5px solid $text;
+    border: 0.5px solid rgba(160, 123, 80, 0.25);
     background-color: inherit;
     cursor: pointer;
     width: 100%;
     padding-right: 50px;
     text-align: left;
+
+    @media (min-width: $width-tablet) {
+      padding: 20px 280px 20px 30px;
+      min-height: 77px;
+    }
 
     &::before {
       position: absolute;
@@ -39,9 +52,13 @@
       width: 43px;
       height: 100%;
       background-color: inherit;
-      border-left: 0.5px solid $text;
+      border-left: 0.5px solid rgba(160, 123, 80, 0.25);
       right: 0;
       top: 0;
+
+      @media (min-width: $width-tablet) {
+        width: 80px;
+      }
     }
 
     &::after {
@@ -53,6 +70,15 @@
       height: 16px;
       top: calc(50% - 8px);
       right: 13px;
+
+      @media (min-width: $width-tablet) {
+        right: 30px;
+
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
     }
 
     @media (min-width: $width-tablet) {
@@ -64,7 +90,7 @@
     @include text(14px, 20px);
     font-weight: 300;
     color: $text-question;
-    border: 0.5px solid $text;
+    border: 0.5px solid rgba(160, 123, 80, 0.25);
     border-top: none;
     margin: 0;
     padding: 10px 17px 10px 10px;
@@ -72,6 +98,7 @@
 
     @media (min-width: $width-tablet) {
       @include text(16px, 25px);
+      padding: 20px 280px 20px 30px;
     }
   }
 }
