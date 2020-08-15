@@ -4,6 +4,22 @@
   text-align: center;
   padding-bottom: 30px;
 
+  &__wrapper {
+    @media (min-width: $width-tablet) {
+      display: flex;
+      align-items: center;
+      //  vertical-align: middle;
+      justify-content: center;
+    }
+  }
+
+  &__contacts {
+    @media (min-width: $width-tablet) {
+      display: flex;
+      order: 1;
+    }
+  }
+
   &__contacts-adress {
     @include text(14px, 20px);
     font-weight: 400;
@@ -13,6 +29,8 @@
 
     @media (min-width: $width-tablet) {
       @include text(14px, 27px);
+      margin-bottom: 0;
+      margin-right: 80px;
     }
   }
 
@@ -26,7 +44,8 @@
 
     @media (min-width: $width-tablet) {
       @include text(14px, 27px);
-      ont-weight: 700;
+      font-weight: 700;
+      margin-bottom: 0;
     }
   }
 
@@ -35,11 +54,31 @@
     justify-content: center;
     padding-bottom: 5px;
     padding-top: 5px;
+
+    @media (min-width: $width-tablet) {
+      margin-right: 130px;
+    }
   }
 
   &__social-item {
     padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
+
+    @media (min-width: $width-tablet) {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-right: 0;
+
+      svg {
+        width: 18px;
+      }
+    }
+  }
+
+  &__logo {
+    @media (min-width: $width-tablet) {
+      display: none;
+    }
   }
 }
