@@ -3,31 +3,71 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  @media (min-width: $width-tablet) {
+    padding-top: 85px;
+  }
+
   &__title {
     margin-bottom: 35px;
+
+    @media (min-width: $width-tablet) {
+      margin-bottom: 25px;
+    }
   }
 
   &__text {
     margin-bottom: 40px;
+
+    @media (min-width: $width-tablet) {
+      margin: 0 auto;
+      width: 80%;
+      margin-bottom: 24px;
+    }
   }
 
   &__slider {
     padding: 0 11px;
     background-image: linear-gradient(to bottom, #181617 63px, #1f1c1d 63px, #1f1c1d 64px);
     position: relative;
+
+    @media (min-width: $width-tablet) {
+      background-image: none;
+      padding-bottom: 120px;
+    }
   }
 
   &__slider-image {
     display: block;
     margin: 0 auto;
     margin-bottom: 25px;
+
+    @media (min-width: $width-tablet) {
+      width: 207px;
+      height: 210px;
+      order: 2;
+      position: absolute;
+      bottom: 0;
+      right: 70px;
+    }
+  }
+
+  &__wrapper-text {
+    text-align: center;
+
+    @media (min-width: $width-tablet) {
+      background-color: #1f1c1d;
+      text-align: left;
+      padding: 70px 95px 65px 106px;
+      border: 23px solid #151313;
+      outline: 0.5px solid rgba(160, 123, 80, 0.43);
+      order: 1;
+    }
   }
 
   &__slider-autor-name {
     @include text(18px, 21px);
     font-weight: 500;
     color: $text;
-    text-align: center;
     margin: 0;
     margin-bottom: 10px;
 
@@ -40,7 +80,6 @@
     @include text(14px, 19px);
     font-weight: 400;
     color: $text;
-    text-align: center;
     margin: 0;
     margin-bottom: 25px;
 
@@ -52,7 +91,6 @@
   &__slider-text {
     @include text(14px, 20px);
     font-weight: 300;
-    text-align: center;
     margin-bottom: 25px;
 
     @media (min-width: $width-tablet) {
@@ -63,16 +101,36 @@
   &__slider-social {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
     padding-left: 90px;
     padding-right: 90px;
     max-width: 350px;
+
+    @media (max-width: $width-mobile-only) {
+      margin: 0 auto;
+    }
+
+    @media (min-width: $width-tablet) {
+      padding: 0;
+      width: 70%;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 
   &__slider-social-item {
-    margin: 0 auto;
     text-align: center;
     padding-bottom: 10px;
+
+    @media (max-width: $width-mobile-only) {
+      margin: 0 auto;
+    }
+
+    @media (min-width: $width-tablet) {
+      margin-right: 5px;
+    }
   }
 
   &__slider-arrow {
@@ -81,14 +139,35 @@
     border: none;
     cursor: pointer;
 
+    @media (min-width: $width-tablet) {
+      svg {
+        width: 15px;
+        height: 30px;
+      }
+    }
+
     &--prev {
-      top: 54px;
-      left: 45px;
+      @media (max-width: $width-mobile-only) {
+        top: 54px;
+        left: 45px;
+      }
+
+      @media (min-width: $width-tablet) {
+        top: 88%;
+        right: 295px;
+      }
     }
 
     &--next {
-      top: 54px;
-      right: 45px;
+      @media (max-width: $width-mobile-only) {
+        top: 54px;
+        right: 45px;
+      }
+
+      @media (min-width: $width-tablet) {
+        top: 88%;
+        right: 25px;
+      }
     }
   }
 }
