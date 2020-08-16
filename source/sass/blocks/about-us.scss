@@ -17,6 +17,10 @@
     @media (min-width: $width-tablet) {
       margin-bottom: 58px;
     }
+
+    @media (min-width: $width-desktop) {
+      margin-bottom: 47px;
+    }
   }
 
   &__list {
@@ -25,6 +29,12 @@
 
     @media (min-width: $width-tablet) {
       padding-bottom: 70px;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-left: 55px;
+      display: flex;
+      flex-wrap: wrap;
     }
   }
 
@@ -41,6 +51,14 @@
       @include text(16px, 26px);
       width: 360px;
     }
+
+    @media (min-width: $width-desktop) {
+      margin: 0;
+
+      &:not(:nth-child(3)) {
+        margin-right: 40px;
+      }
+    }
   }
 
   &__link {
@@ -54,6 +72,9 @@
     min-height: 218px;
     display: block;
 
+    @media (min-width: $width-desktop) {
+      padding: 192px 30px 30px 30px;
+    }
 
     &:hover,
     &:focus {
@@ -81,6 +102,12 @@
       left: calc(50% - 40px);
       width: 80px;
       height: 88px;
+
+      @media (min-width: $width-desktop) {
+        top: 50px;
+        width: 98px;
+        height: 107px;
+      }
     }
 
     &--consultation {
@@ -88,6 +115,12 @@
       left: calc(50% - 40px);
       width: 80px;
       height: 71px;
+
+      @media (min-width: $width-desktop) {
+        top: 52px;
+        width: 107px;
+        height: 95px;
+      }
     }
 
     &--nutrition {
@@ -95,6 +128,12 @@
       left: calc(50% - 28px);
       width: 57px;
       height: 88px;
+
+      @media (min-width: $width-desktop) {
+        top: 50px;
+        width: 70px;
+        height: 108px;
+      }
     }
   }
 }
