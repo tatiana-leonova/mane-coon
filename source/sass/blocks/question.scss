@@ -21,10 +21,30 @@
 
   &__list {
     @include no-list;
+    counter-reset: myCounter;
+
+    @media (min-width: $width-tablet) {
+      padding-left: 130px;
+    }
   }
 
   &__item {
     margin-bottom: 30px;
+    position: relative;
+
+    @media (min-width: $width-tablet) {
+      &::after {
+        @include text(50px, 59px);
+        position: absolute;
+        top: 10px;
+        left: -83px;
+        counter-increment: myCounter;
+        content: "0" counter(myCounter);
+        font-weight: 700;
+        color: $text;
+        font-size: 50px;
+      }
+    }
   }
 
   &__item-title {
@@ -42,7 +62,7 @@
     text-align: left;
 
     @media (min-width: $width-tablet) {
-      padding: 20px 280px 20px 30px;
+      padding: 20px 150px 20px 30px;
       min-height: 77px;
     }
 
@@ -98,7 +118,7 @@
 
     @media (min-width: $width-tablet) {
       @include text(16px, 25px);
-      padding: 20px 280px 20px 30px;
+      padding: 20px 150px 20px 30px;
     }
   }
 }
