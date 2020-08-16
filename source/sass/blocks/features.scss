@@ -9,6 +9,11 @@
       margin: 0 auto;
       margin-bottom: 35px;
     }
+
+    @media (min-width: $width-desktop) {
+      margin-bottom: 23px;
+      width: 750px;
+    }
   }
 
   &__text {
@@ -18,6 +23,10 @@
       width: 70%;
       margin: 0 auto;
       margin-bottom: 30px;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 750px;
     }
   }
 
@@ -100,6 +109,63 @@
         }
       }
     }
+
+    @media (min-width: $width-desktop) {
+      @include text(16px, 23px);
+
+      &::before {
+        width: 15px;
+        height: 15px;
+      }
+
+      &--1 {
+        width: 260px;
+        top: -560px;
+        left: -350px;
+        text-align: right;
+
+        &::before {
+          top: 5px;
+          left: 288px;
+        }
+      }
+
+      &--2 {
+        width: 201px;
+        top: -430px;
+        right: -273px;
+        text-align: left;
+
+        &::before {
+          top: 5px;
+          left: -30px;
+        }
+      }
+
+      &--3 {
+        width: 170px;
+        top: -250px;
+        right: -207px;
+        text-align: left;
+
+        &::before {
+          top: 5px;
+          left: -27px;
+        }
+      }
+
+      &--4 {
+        width: 215px;
+        top: -305px;
+        left: -330px;
+        text-align: right;
+
+        &::before {
+          top: 5px;
+          left: 232px;
+        }
+      }
+    }
   }
 
   &__image-wrapper {
@@ -111,6 +177,10 @@
 
     @media (min-width: $width-tablet) {
       width: 700px;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 1300px;
     }
 
     &::before {
@@ -129,6 +199,13 @@
         height: 345px;
         top: 19%;
         right: 25%;
+      }
+
+      @media (min-width: $width-desktop) {
+        width: 519px;
+        height: 519px;
+        top: 19%;
+        right: 32%;
       }
     }
 
@@ -149,6 +226,13 @@
         top: 11%;
         right: 20%;
       }
+
+      @media (min-width: $width-desktop) {
+        width: 631px;
+        height: 631px;
+        top: 11%;
+        right: 28%;
+      }
     }
   }
 
@@ -160,6 +244,12 @@
       width: 410px;
       height: 100%;
       margin-left: calc(50% - 190px);
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 623px;
+      margin-left: calc(50% - 300px);
+      margin-bottom: 70px;
     }
   }
 }
