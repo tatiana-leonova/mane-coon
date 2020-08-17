@@ -3,6 +3,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-width: $width-desktop) {
+    background-image: url("../img/bg-care-desktop@1x.jpg");
+    background-position: 0 0;
+  }
+
   &__title {
     padding-top: 60px;
     padding-left: 15px;
@@ -13,6 +18,11 @@
       padding-top: 90px;
       margin-bottom: 38px;
     }
+
+    @media (min-width: $width-desktop) {
+      padding-top: 84px;
+      margin-bottom: 48px;
+    }
   }
 
   &__list {
@@ -22,10 +32,17 @@
     @media (min-width: $width-tablet) {
       padding-bottom: 75px;
     }
+
+    @media (min-width: $width-desktop) {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
   }
 
   &__item {
-    border: 1px solid $text;
+    border: 0.5px solid rgba(160, 123, 80, 0.41);
     margin: 0 auto;
     margin-bottom: 30px;
     padding: 25px 54px 25px 25px;
@@ -35,6 +52,11 @@
     @media (min-width: $width-tablet) {
       max-width: 600px;
       padding: 35px 110px 30px 45px;
+    }
+
+    @media (min-width: $width-desktop) {
+      max-width: 558px;
+      padding: 35px 110px 20px 45px;
     }
 
     &::before {
@@ -77,6 +99,10 @@
     @media (min-width: $width-tablet) {
       @include text(22px, 26px);
     }
+
+    @media (min-width: $width-desktop) {
+      margin-bottom: 10px;
+    }
   }
 
   &__item-text {
@@ -85,6 +111,7 @@
 
     @media (min-width: $width-tablet) {
       @include text(14px, 23px);
+      margin-top: 0;
     }
   }
 }
