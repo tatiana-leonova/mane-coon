@@ -28,6 +28,11 @@
       background-image: linear-gradient(to bottom, #1f1c1d 110px, #181617 110px, #181617 111px);
       padding-bottom: 0;
     }
+
+    @media (min-width: $width-desktop) {
+      background-image: none;
+      margin-right: 45px;
+    }
   }
 
   &__slider-image {
@@ -38,6 +43,24 @@
     @media (min-width: $width-tablet) {
       width: 302px;
       height: 208px;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 480px;
+      height: 330px;
+      margin: 0;
+      position: absolute;
+      top: 10%;
+      left: 115px;
+    }
+  }
+
+  &__slider-content {
+    @media (min-width: $width-desktop) {
+      background-color: #181617;
+      width: 640px;
+      padding: 80px 103px 95px 135px;
+      margin-left: auto;
     }
   }
 
@@ -50,6 +73,10 @@
     @media (min-width: $width-tablet) {
       @include text(24px, 28px);
       margin-bottom: 18px;
+    }
+
+    @media (min-width: $width-desktop) {
+      text-align: left;
     }
   }
 
@@ -64,6 +91,11 @@
       font-weight: 300;
       padding-left: 75px;
       padding-right: 75px;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding: 0;
+      text-align: left;
     }
   }
 
@@ -98,6 +130,12 @@
         @media (min-width: $width-tablet) {
           background-image: url("../img/icon-arrow-left-long.svg");
         }
+
+        @media (min-width: $width-desktop) {
+          background-image: url("../img/icon-arrow-left-long.svg");
+          width: 15px;
+          height: 30px;
+        }
       }
     }
 
@@ -115,6 +153,12 @@
         @media (min-width: $width-tablet) {
           background-image: url("../img/icon-arrow-right-long.svg");
         }
+
+        @media (min-width: $width-desktop) {
+          background-image: url("../img/icon-arrow-right-slider.svg");
+          width: 15px;
+          height: 30px;
+        }
       }
     }
   }
@@ -125,6 +169,11 @@
 
     @media (min-width: $width-tablet) {
       justify-content: center;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding: 0;
+      justify-content: start;
     }
   }
 
