@@ -1,0 +1,7 @@
+.social {
+  @include no-list;
+
+  &__item-link {
+    padding: 5px;
+  }
+}

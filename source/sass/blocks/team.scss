@@ -1,0 +1,216 @@
+.team {
+  background-color: #181617;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 85px;
+  }
+
+  // @media (min-width: $width-desktop) {
+  //   padding-bottom: 70px;
+  // }
+
+  &__title {
+    margin-bottom: 35px;
+
+    @media (min-width: $width-tablet) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 40px;
+
+    @media (min-width: $width-tablet) {
+      margin: 0 auto;
+      width: 80%;
+      margin-bottom: 24px;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 550px;
+    }
+  }
+
+  &__slider {
+    padding: 0 11px;
+    background-image: linear-gradient(to bottom, #181617 63px, #1f1c1d 63px, #1f1c1d 64px);
+    position: relative;
+
+    @media (min-width: $width-tablet) {
+      background-image: none;
+      padding-bottom: 120px;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-bottom: 20px;
+    }
+  }
+
+  &__slider-image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+    @media (min-width: $width-tablet) {
+      width: 207px;
+      height: 210px;
+      order: 2;
+      position: absolute;
+    }
+
+    @media (max-width: $width-tablet-only) {
+      bottom: 0;
+      right: 70px;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 360px;
+      height: 358px;
+
+      top: -1px;
+      left: 150px;
+    }
+  }
+
+  &__wrapper-text {
+    text-align: center;
+
+    @media (min-width: $width-tablet) {
+      background-color: #1f1c1d;
+      text-align: left;
+      padding: 70px 95px 65px 106px;
+      border: 23px solid #151313;
+      outline: 0.5px solid rgba(160, 123, 80, 0.43);
+      order: 1;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 650px;
+      margin-left: 450px;
+      padding: 70px 95px 45px 95px;
+    }
+  }
+
+  &__slider-autor-name {
+    @include text(18px, 21px);
+    font-weight: 500;
+    color: $text;
+    margin: 0;
+    margin-bottom: 10px;
+
+    @media (min-width: $width-tablet) {
+      @include text(24px, 28px);
+    }
+  }
+
+  &__slider-autor-post {
+    @include text(14px, 19px);
+    font-weight: 400;
+    color: $text;
+    margin: 0;
+    margin-bottom: 25px;
+
+    @media (min-width: $width-tablet) {
+      @include text(16px, 22px);
+    }
+  }
+
+  &__slider-text {
+    @include text(14px, 20px);
+    font-weight: 300;
+    margin-bottom: 25px;
+
+    @media (min-width: $width-tablet) {
+      @include text(16px, 25px);
+    }
+
+    @media (min-width: $width-desktop) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__slider-social {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 90px;
+    padding-right: 90px;
+    max-width: 350px;
+
+    @media (max-width: $width-mobile-only) {
+      margin: 0 auto;
+    }
+
+    @media (min-width: $width-tablet) {
+      padding: 0;
+      width: 70%;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  &__slider-social-item {
+    text-align: center;
+    padding-bottom: 10px;
+
+    @media (max-width: $width-mobile-only) {
+      margin: 0 auto;
+    }
+
+    @media (min-width: $width-tablet) {
+      margin-right: 5px;
+    }
+  }
+
+  &__slider-arrow {
+    position: absolute;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: $width-tablet) {
+      svg {
+        width: 15px;
+        height: 30px;
+      }
+    }
+
+    &--prev {
+      @media (max-width: $width-mobile-only) {
+        top: 54px;
+        left: 45px;
+      }
+
+      @media (max-width: $width-tablet-only) {
+        top: 88%;
+        right: 295px;
+      }
+
+      @media (min-width: $width-desktop) {
+        top: 36%;
+        left: 15px;
+      }
+    }
+
+    &--next {
+      @media (max-width: $width-mobile-only) {
+        top: 54px;
+        right: 45px;
+      }
+
+      @media (max-width: $width-tablet-only) {
+        top: 88%;
+        right: 25px;
+      }
+
+      @media (min-width: $width-desktop) {
+        top: 36%;
+        right: 15px;
+      }
+    }
+  }
+}

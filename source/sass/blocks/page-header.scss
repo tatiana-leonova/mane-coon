@@ -1,0 +1,140 @@
+.page-header {
+  background-color: #181617;
+  padding-top: 27px;
+  position: relative;
+
+  @media (max-width: $width-mobile-only) {
+    text-align: center;
+  }
+
+  @media (min-width: $width-tablet) {
+    min-height: 595px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 40px;
+    min-height: 685px;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @media (min-width: $width-tablet) {
+      text-align: center;
+      margin-bottom: 75px;
+    }
+  }
+
+  &__logo-img {
+    @media (min-width: $width-tablet) {
+      width: 55px;
+      height: 25px;
+    }
+  }
+
+  &__promo-wrapper {
+    @media (min-width: $width-tablet) {
+      max-width: 340px;
+      margin-left: 10px;
+    }
+
+    @media (min-width: $width-desktop) {
+      max-width: 340px;
+      margin-left: 200px;
+    }
+  }
+
+  &__geo {
+    @include text(14px, 21px);
+    display: block;
+    color: $text;
+    margin-bottom: 20px;
+
+    @media (min-width: $width-tablet) {
+      @include text(16px, 24px);
+    }
+  }
+
+  &__title {
+    @include text(36px, 42px);
+    font-family: $font-secondary;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 30px;
+
+    @media (min-width: $width-tablet) {
+      @include text(52px, 60px);
+    }
+  }
+
+  &__text {
+    @include text(14px, 20px);
+    color: $text;
+    margin-bottom: 40px;
+    padding-bottom: 0;
+
+    @media (min-width: $width-tablet) {
+      @include text(16px, 24px);
+      max-width: 330px;
+      margin-bottom: 65px;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin-left: auto;
+
+    @media (min-width: $width-tablet) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &__button {
+    @media (max-width: $width-tablet-only) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__social {
+    @media (max-width: $width-mobile-only) {
+      display: none;
+    }
+
+    @media (max-width: $width-tablet-only) {
+      display: flex;
+      width: 100px;
+      margin-left: 40px;
+    }
+
+    @media (min-width: $width-tablet) {
+      padding-bottom: 30px;
+    }
+
+    @media (min-width: $width-desktop) {
+      margin-left: 75px;
+      margin-top: 30px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: -90px;
+        left: 13px;
+        height: 78px;
+        width: 0.5px;
+        background-color: $white;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__social-item {
+    @media (max-width: $width-mobile-only) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,161 @@
+.pets {
+  background-color: #1f1c1d;
+  padding-top: 60px;
+  margin-bottom: 60px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 100px;
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 130px;
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+    @media (min-width: $width-desktop) {
+      width: 520px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+
+    @media (min-width: $width-tablet) {
+      width: 75%;
+      margin: 0 auto;
+      margin-bottom: 38px;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 520px;
+    }
+  }
+
+  &__list {
+    @include no-list;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 85%;
+
+    @media (min-width: $width-tablet) {
+      width: 45%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 275px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &__item-link {
+    @include text(16px, 19px);
+    text-decoration: none;
+    font-weight: 500;
+    color: $white;
+    opacity: 0.2;
+
+    @media (min-width: $width-tablet) {
+      @include text(18px, 21px);
+    }
+
+    &--active {
+      opacity: 1;
+
+      @media (min-width: $width-tablet) {
+        @include text(18px, 21px);
+      }
+    }
+  }
+
+  &__slider-image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__slider-image--1 {
+    @media (min-width: $width-tablet) {
+      width: 474px;
+      height: 490px;
+    }
+  }
+
+  &__slider-image--2,
+  &__slider-image--3 {
+    @media (min-width: $width-mobile) {
+      display: none;
+    }
+
+    @media (min-width: $width-desktop) {
+      display: block;
+    }
+  }
+
+  &__slider-image--2 {
+    margin-bottom: 37px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__slider {
+    display: block;
+    position: relative;
+    margin-bottom: 45px;
+    margin-right: 120px;
+    margin-left: 120px;
+
+    @media (min-width: $width-tablet) {
+      margin-bottom: 55px;
+    }
+
+    @media (min-width: $width-desktop) {
+      column-count: 2;
+      column-gap: 15px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__slider-arrow {
+    background-color: inherit;
+    border: none;
+    position: absolute;
+
+    @media (min-width: $width-tablet) {
+      svg {
+        width: 50px;
+        height: 30px;
+      }
+    }
+
+    @media (min-width: $width-desktop) {
+      display: none;
+    }
+
+    &--prev {
+      left: 0;
+      top: 50%;
+    }
+
+    &--next {
+      right: 0;
+      top: 50%;
+    }
+  }
+}
