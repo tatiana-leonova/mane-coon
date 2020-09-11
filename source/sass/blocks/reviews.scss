@@ -117,22 +117,14 @@
     cursor: pointer;
 
     &--prev {
-      &::before {
-        position: absolute;
-        content: "";
-        background-image: url("../img/icon-arrow-left-slider.svg");
-        background-repeat: no-repeat;
-        width: 60px;
-        height: 22px;
-        top: 145px;
-        left: 45px;
+      position: absolute;
+      top: 73px;
+      left: -7px;
 
-        @media (min-width: $width-tablet) {
-          background-image: url("../img/icon-arrow-left-long.svg");
-        }
+      @media (min-width: $width-tablet) {
+        top: 95px;
 
-        @media (min-width: $width-desktop) {
-          background-image: url("../img/icon-arrow-left-long.svg");
+        svg {
           width: 15px;
           height: 30px;
         }
@@ -140,25 +132,17 @@
     }
 
     &--next {
-      &::before {
-        position: absolute;
-        content: "";
-        background-image: url("../img/icon-arrow-right-slider.svg");
-        background-repeat: no-repeat;
-        width: 60px;
-        height: 22px;
-        top: 145px;
-        right: 45px;
+      position: absolute;
+      top: 73px;
+      right: -7px;
+    }
 
-        @media (min-width: $width-tablet) {
-          background-image: url("../img/icon-arrow-right-long.svg");
-        }
+    @media (min-width: $width-tablet) {
+      top: 95px;
 
-        @media (min-width: $width-desktop) {
-          background-image: url("../img/icon-arrow-right-slider.svg");
-          width: 15px;
-          height: 30px;
-        }
+      svg {
+        width: 15px;
+        height: 30px;
       }
     }
   }
