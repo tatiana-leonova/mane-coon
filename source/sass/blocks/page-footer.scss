@@ -18,6 +18,10 @@
       display: flex;
       order: 1;
     }
+
+    @media (min-width: $width-desktop) {
+      order: 3;
+    }
   }
 
   &__contacts-adress {
@@ -58,6 +62,10 @@
     @media (min-width: $width-tablet) {
       margin-right: 130px;
     }
+
+    @media (min-width: $width-desktop) {
+      order: 2;
+    }
   }
 
   &__social-item {
@@ -79,6 +87,12 @@
   &__logo {
     @media (min-width: $width-tablet) {
       display: none;
+    }
+
+    @media (min-width: $width-desktop) {
+      display: block;
+      order: 1;
+      margin-right: 80px;
     }
   }
 }
