@@ -85,10 +85,18 @@
   &__slider-image {
     display: block;
     margin: 0 auto;
+
+    @media (max-width: $width-mobile-only) {
+      width: 85%;
+    }
+
+    // @media (min-width: $width-tablet) {
+    //   margin: 0;
+    // }
   }
 
   &__slider-image--1 {
-    width: 85%;
+    // width: 85%;
 
     @media (min-width: $width-tablet) {
       width: 474px;
@@ -120,9 +128,6 @@
     display: block;
     position: relative;
     margin-bottom: 45px;
-    // margin-right: 120px;
-    // margin-left: 120px;
-    width: 100%;
 
     @media (min-width: $width-tablet) {
       margin-bottom: 55px;
@@ -131,6 +136,8 @@
     @media (min-width: $width-desktop) {
       column-count: 2;
       column-gap: 15px;
+      width: 1020px;
+      margin: 0 auto;
       margin-bottom: 60px;
     }
   }
