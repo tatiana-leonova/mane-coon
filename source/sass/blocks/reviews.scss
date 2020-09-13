@@ -56,6 +56,10 @@
   }
 
   &__slider-content {
+    @media (min-width: $width-tablet) {
+      padding-bottom: 30px;
+    }
+
     @media (min-width: $width-desktop) {
       background-color: #181617;
       width: 640px;
@@ -129,6 +133,10 @@
           height: 30px;
         }
       }
+
+      @media (min-width: $width-desktop) {
+        left: 20px;
+      }
     }
 
     &--next {
@@ -144,6 +152,10 @@
         width: 15px;
         height: 30px;
       }
+    }
+
+    @media (min-width: $width-desktop) {
+      right: -70px;
     }
   }
 

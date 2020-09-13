@@ -88,9 +88,11 @@
   }
 
   &__slider-image--1 {
+    width: 85%;
+
     @media (min-width: $width-tablet) {
       width: 474px;
-      height: 490px;
+      height: auto;
     }
   }
 
@@ -118,8 +120,9 @@
     display: block;
     position: relative;
     margin-bottom: 45px;
-    margin-right: 120px;
-    margin-left: 120px;
+    // margin-right: 120px;
+    // margin-left: 120px;
+    width: 100%;
 
     @media (min-width: $width-tablet) {
       margin-bottom: 55px;

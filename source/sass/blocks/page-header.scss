@@ -85,11 +85,13 @@
   &__image {
     display: block;
     margin-left: auto;
+    width: 60%;
 
     @media (min-width: $width-tablet) {
       position: absolute;
       bottom: 0;
       right: 0;
+      width: 70%;
     }
   }
 
