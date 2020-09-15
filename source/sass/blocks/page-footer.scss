@@ -45,11 +45,21 @@
     text-decoration: none;
     margin: 0;
     margin-bottom: 30px;
+    transition: 0.3s;
 
     @media (min-width: $width-tablet) {
       @include text(14px, 27px);
       font-weight: 700;
       margin-bottom: 0;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 

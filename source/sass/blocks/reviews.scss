@@ -38,9 +38,6 @@
     @media (min-width: $width-desktop) {
       background-image: none;
       margin: 0 auto;
-      // margin-right: 45px;
-      // padding-right: 70px;
-      // padding-left: 70px;
     }
   }
 
@@ -128,10 +125,18 @@
     }
   }
 
+  &__slider-social-link {
+    @media (min-width: $width-tablet) {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+
   &__slider-arrow {
     background-color: inherit;
     border: none;
     cursor: pointer;
+    transition: 0.3s;
 
     &--prev {
       position: absolute;
@@ -148,6 +153,7 @@
       }
 
       @media (min-width: $width-desktop) {
+        top: 47%;
         left: 20px;
       }
     }
@@ -168,7 +174,17 @@
     }
 
     @media (min-width: $width-desktop) {
+      top: 47%;
       right: -35px;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 

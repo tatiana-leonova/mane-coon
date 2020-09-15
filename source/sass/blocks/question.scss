@@ -82,6 +82,7 @@
     width: 100%;
     padding-right: 50px;
     text-align: left;
+    transition: 0.3s;
 
     @media (min-width: $width-tablet) {
       padding: 20px 150px 20px 30px;
@@ -101,6 +102,7 @@
       border-left: 0.5px solid rgba(160, 123, 80, 0.25);
       right: 0;
       top: 0;
+      transition: 0.3s;
 
       @media (min-width: $width-tablet) {
         width: 80px;
@@ -120,6 +122,7 @@
       height: 16px;
       top: calc(50% - 8px);
       right: 13px;
+      transition: 0.3s;
 
       @media (min-width: $width-tablet) {
         right: 30px;
@@ -142,6 +145,24 @@
 
     @media (min-width: $width-tablet) {
       @include text(16px, 19px);
+    }
+
+    &:hover,
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.1);
+      border: 0.5px solid rgba(160, 123, 80, 1);
+
+      &::before {
+        background-color: $text;
+      }
+
+      &::after {
+        background-image: url("../img/plus-hvr.svg");
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 

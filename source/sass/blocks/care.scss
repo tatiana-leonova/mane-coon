@@ -48,6 +48,7 @@
     padding: 25px 54px 25px 25px;
     max-width: 500px;
     position: relative;
+    transition: 0.3s;
 
     @media (min-width: $width-tablet) {
       max-width: 600px;
@@ -67,6 +68,7 @@
       background-color: $text;
       top: 0;
       right: 0;
+      transition: 0.3s;
 
       @media (min-width: $width-tablet) {
         width: 60px;
@@ -87,6 +89,27 @@
         right: 15px;
       }
     }
+
+    &:hover,
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.5);
+      border: 0.5px solid $text;
+
+
+      &::before {
+        background-color: rgba(160, 123, 80, 0.5);
+      }
+    }
+
+    &:active {
+      background-color: rgba(0, 0, 0, 0.3);
+      opacity: 0.7;
+    }
+  }
+
+  &__item-link {
+    text-decoration: none;
+    color: $white;
   }
 
   &__item-title {

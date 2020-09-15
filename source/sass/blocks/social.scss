@@ -3,5 +3,27 @@
 
   &__item-link {
     padding: 5px;
+    transition: 0.3s;
+
+    &--white {
+      svg {
+        fill: $white;
+      }
+    }
+
+    &--gold {
+      svg {
+        fill: $text;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
