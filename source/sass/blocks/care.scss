@@ -3,9 +3,21 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-care-tablet@2x.jpg");
+    // background-size: 570px auto;
+  }
+
   @media (min-width: $width-desktop) {
     background-image: url("../img/bg-care-desktop@1x.jpg");
     background-position: 0 0;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-care-desktop@2x.jpg");
+      // background-size: 570px auto;
+    }
   }
 
   &__title {

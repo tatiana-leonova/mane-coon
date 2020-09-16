@@ -39,26 +39,30 @@
         </div>
       </div>
       <picture>
-        <source media="(min-width: 1230px)" srcset="img/cat-promo-desktop@1x.png">
-        <source media="(min-width: 768px)" srcset="img/cat-promo-tablet@1x.png">
-        <img class="page-header__image" src="img/cat-promo-mobile@1x.png" alt="Фото рыжего кота Мейн-Куна">
+        <source media="(min-width: 1230px)" srcset="img/cat-promo-desktop@1x.png 1x, img/cat-promo-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/cat-promo-tablet@1x.png 1x, img/cat-promo-tablet@2x.png 2x">
+        <img class="page-header__image" src="img/cat-promo-mobile@1x.png" srcset="img/cat-promo-mobile@2x.png 2x"
+          alt="Фото рыжего кота Мейн-Куна">
       </picture>
     </div>
     <ul class="page-header__social social">
       <li class="page-header__social-item">
-        <a class="social__item-link social__item-link--white social__item-link--vk" href="#" target="_blank" aria-label="Вконтакте">
+        <a class="social__item-link social__item-link--white social__item-link--vk" href="#" target="_blank"
+          aria-label="Вконтакте">
           <svg width="14" height="10">
             <use xlink:href="#icon-vk"></use>
         </a>
       </li>
       <li class="page-header__social-item">
-        <a class="social__item-link social__item-link--white social__item-link--twitter" href="#" target="_blank" aria-label="Твиттер">
+        <a class="social__item-link social__item-link--white social__item-link--twitter" href="#" target="_blank"
+          aria-label="Твиттер">
           <svg width="14" height="10">
             <use xlink:href="#icon-twitter"></use>
         </a>
       </li>
       <li class="page-header__social-item">
-        <a class="social__item-link social__item-link--white social__item-link--facebook" href="#" target="_blank" aria-label="Фейсбук">
+        <a class="social__item-link social__item-link--white social__item-link--facebook" href="#" target="_blank"
+          aria-label="Фейсбук">
           <svg width="10" height="13">
             <use xlink:href="#icon-facebook"></use>
         </a>
@@ -80,16 +84,21 @@
         </ul>
         <div class="pets__slider">
           <div class="pets__slider-item pets__slider-item--1">
-            <img class="pets__slider-image pets__slider-image--1" src="img/pets-3-desktop@1x.png" width="234"
-              height="248" alt="Изображение серого кота Мейн-Куна">
+            <picture>
+              <img class="pets__slider-image pets__slider-image--1" src="img/pets-3@1x.png" srcset="img/pets-3@2x.png 2x" width="234" height="248" alt="Изображение серого кота Мейн-Куна">
+            </picture>
           </div>
           <div class="pets__slider-item pets__slider-item--2">
-            <img class="pets__slider-image pets__slider-image--2" src="img/pets-1-desktop@1x.png" width="519"
-              height="215" alt="Изображение белого кота Мейн-Куна">
+            <picture>
+              <img class="pets__slider-image pets__slider-image--2" src="img/pets-1@1x.png"
+                srcset="img/pets-1@2x.png 2x" width="519" height="215" alt="Изображение белого кота Мейн-Куна">
+            </picture>
           </div>
           <div class="pets__slider-item pets__slider-item--3">
-            <img class="pets__slider-image pets__slider-image--3" src="img/pets-2-desktop@1x.png" width="519"
-              height="215" alt="Изображение коричневого кота Мейн-Куна">
+            <picture>
+              <img class="pets__slider-image pets__slider-image--3" src="img/pets-2@1x.png" srcset="img/pets-2@2x.png 2x" width="519" height="215"
+                alt="Изображение коричневого кота Мейн-Куна">
+            </picture>
           </div>
           <button class="pets__slider-arrow pets__slider-arrow--prev arrow-slider arrow-slider--prev" type="button"
             aria-label="Предыдущий слайд">
@@ -118,9 +127,12 @@
         <div>
           <div class="features__image-wrapper">
             <picture>
-              <source media="(min-width: 1286px)" srcset="img/features-cat-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="img/features-cat-tablet@1x.png">
-              <img class="features__image" src="img/features-cat-mobile@1x.png" width="256" height="291"
+              <source media="(min-width: 1286px)"
+                srcset="img/features-cat-desktop@1x.png 1x, img/features-cat-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/features-cat-tablet@1x.png 1x, img/features-cat-tablet@2x.png 2x">
+              <img class="features__image" src="img/features-cat-mobile@1x.png"
+                srcset="img/features-cat-mobile@2x.png 2x" width="256" height="291"
                 alt="Изображение рыжего кота Мейн-Куна во весь рост">
             </picture>
           </div>
@@ -170,38 +182,38 @@
         <ul class="care__list">
           <li class="care__item">
             <a class="care__item-link" href="#">
-            <h3 class="care__item-title">Шерсть</h3>
-            <p class="care__item-text">
-              Мы разработали 8 правил, следуя которым, шерсть вашего
-              кота всегда будет блестящей, мягкой и послушной
-            </p>
+              <h3 class="care__item-title">Шерсть</h3>
+              <p class="care__item-text">
+                Мы разработали 8 правил, следуя которым, шерсть вашего
+                кота всегда будет блестящей, мягкой и послушной
+              </p>
             </a>
           </li>
           <li class="care__item">
             <a class="care__item-link" href="#">
-            <h3 class="care__item-title">Уши и глаза</h3>
-            <p class="care__item-text">
-              Владельцам котов необходимо регулярно осматривать
-              ушки и глаза своих питомцев, ведь это может быть
-              признаками заболевания
-            </p>
+              <h3 class="care__item-title">Уши и глаза</h3>
+              <p class="care__item-text">
+                Владельцам котов необходимо регулярно осматривать
+                ушки и глаза своих питомцев, ведь это может быть
+                признаками заболевания
+              </p>
             </a>
           </li>
           <li class="care__item">
             <a class="care__item-link" href="#">
-            <h3 class="care__item-title">Когти</h3>
-            <p class="care__item-text">
-              Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать идеальную когтеточку
-            </p>
+              <h3 class="care__item-title">Когти</h3>
+              <p class="care__item-text">
+                Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать идеальную когтеточку
+              </p>
             </a>
           </li>
           <li class="care__item">
             <a class="care__item-link" href="#">
-            <h3 class="care__item-title">Питание</h3>
-            <p class="care__item-text">В нашем питомнике существует два подхода: натуральное питание и питание
-              промышленными кормами,
-              но выбирать только вам</p>
-              </a>
+              <h3 class="care__item-title">Питание</h3>
+              <p class="care__item-text">В нашем питомнике существует два подхода: натуральное питание и питание
+                промышленными кормами,
+                но выбирать только вам</p>
+            </a>
           </li>
         </ul>
       </div>
@@ -217,10 +229,10 @@
         <div class="team__slider">
           <div class="team__slider-item">
             <picture>
-              <source media="(min-width: 1286px)" srcset="img/team-1-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/team-1-tablet@1x.jpg">
-              <img class="team__slider-image" src="img/team-1-mobile@1x.jpg" width="126" height="126"
-                alt="Изображение основателя питомника Сережи Попова">
+              <source media="(min-width: 1286px)" srcset="img/team-1-desktop@1x.jpg 1x, img/team-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/team-1-tablet@1x.jpg 1x, img/team-1-tablet@2x.jpg 2x">
+              <img class="team__slider-image" src="img/team-1-mobile@1x.jpg" srcset="img/team-1-mobile@2x.jpg 2x"
+                width="126" height="126" alt="Изображение основателя питомника Сережи Попова">
             </picture>
             <div class="team__wrapper-text">
               <p class="team__slider-autor-name">
@@ -235,20 +247,22 @@
               </p>
               <ul class="team__slider-social social">
                 <li class="team__slider-social-item">
-                  <a class="social__item-link social__item-link--white social__item-link--facebook" href="#" target="_blank"
-                    aria-label="Фейсбук">
+                  <a class="social__item-link social__item-link--white social__item-link--facebook" href="#"
+                    target="_blank" aria-label="Фейсбук">
                     <svg width="11" height="14">
                       <use xlink:href="#icon-facebook"></use>
                   </a>
                 </li>
                 <li class="team__slider-social-item">
-                  <a class="social__item-link social__item-link--white social__item-link--twitter" href="#" target="_blank" aria-label="Твиттер">
+                  <a class="social__item-link social__item-link--white social__item-link--twitter" href="#"
+                    target="_blank" aria-label="Твиттер">
                     <svg width="17" height="15">
                       <use xlink:href="#icon-twitter"></use>
                   </a>
                 </li>
                 <li class="team__slider-social-item">
-                  <a class="social__item-link social__item-link--white social__item-link--vk" href="#" target="_blank" aria-label="Вконтакте">
+                  <a class="social__item-link social__item-link--white social__item-link--vk" href="#" target="_blank"
+                    aria-label="Вконтакте">
                     <svg width="18" height="10">
                       <use xlink:href="#icon-vk"></use>
                   </a>
@@ -325,10 +339,12 @@
         <div class="reviews__slider">
           <div class="reviews__slider-item">
             <picture>
-              <source media="(min-width: 1286px)" srcset="img/reviewer-1-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/reviewer-1-tablet@1x.jpg">
-              <img class="reviews__slider-image" src="img/reviewer-1-desktop@1x.jpg" width="242" height="166"
-                alt="Изображение Сережи Попова">
+              <source media="(min-width: 1286px)"
+                srcset="img/reviewer-1-desktop@1x.jpg 1x, img/reviewer-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/reviewer-1-tablet@1x.jpg 1x, img/reviewer-1-tablet@2x.jpg 2x">
+              <img class="reviews__slider-image" src="img/reviewer-1-desktop@1x.jpg"
+                srcset="img/reviewer-1-desktop@2x.jpg 2x" width="242" height="166" alt="Изображение Сережи Попова">
             </picture>
             <div class="reviews__slider-content">
               <p class="reviews__slider-autor">Серёжа Попов</p>
@@ -338,14 +354,15 @@
                 <time class="reviews__slider-data" datetime="2018-05-24">24 мая 2018</time>
                 <ul class="reviews__slider-social social">
                   <li class="reviews__slider-social-item">
-                    <a class="social__item-link reviews__slider-social-link social__item-link--gold social__item-link--twitter" href="#" target="_blank"
-                      aria-label="Твиттер">
+                    <a class="social__item-link reviews__slider-social-link social__item-link--gold social__item-link--twitter"
+                      href="#" target="_blank" aria-label="Твиттер">
                       <svg width="17" height="15">
                         <use xlink:href="#icon-twitter"></use>
                     </a>
                   </li>
                   <li class="reviews__slider-social-item">
-                    <a class="reviews__slider-social-link social__item-link social__item-link--gold social__item-link--vk" href="#" target="_blank" aria-label="Вконтакте">
+                    <a class="reviews__slider-social-link social__item-link social__item-link--gold social__item-link--vk"
+                      href="#" target="_blank" aria-label="Вконтакте">
                       <svg width="18" height="10">
                         <use xlink:href="#icon-vk"></use>
                     </a>
@@ -377,19 +394,22 @@
       </div>
       <ul class="page-footer__social social">
         <li class="page-footer__social-item">
-          <a class="social__item-link social__item-link--gold social__item-link--facebook" href="#" target="_blank" aria-label="Фейсбук">
+          <a class="social__item-link social__item-link--gold social__item-link--facebook" href="#" target="_blank"
+            aria-label="Фейсбук">
             <svg width="13" height="17">
               <use xlink:href="#icon-facebook"></use>
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="social__item-link social__item-link--gold social__item-link--twitter" href="#" target="_blank" aria-label="Твиттер">
+          <a class="social__item-link social__item-link--gold social__item-link--twitter" href="#" target="_blank"
+            aria-label="Твиттер">
             <svg width="23" height="18">
               <use xlink:href="#icon-twitter"></use>
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="social__item-link social__item-link--gold social__item-link--vk" href="#" target="_blank" aria-label="Вконтакте">
+          <a class="social__item-link social__item-link--gold social__item-link--vk" href="#" target="_blank"
+            aria-label="Вконтакте">
             <svg width="23" height="15">
               <use xlink:href="#icon-vk"></use>
           </a>
