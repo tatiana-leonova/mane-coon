@@ -96,7 +96,7 @@ gulp.task("refresh", function (done) {
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.optipng({optimizationLevel: 5}),
       imagemin.mozjpeg({progressive: true}),
       imagemin.svgo()
 ]))
